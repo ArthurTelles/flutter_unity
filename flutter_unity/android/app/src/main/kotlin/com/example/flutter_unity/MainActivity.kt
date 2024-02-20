@@ -1,6 +1,4 @@
-package com.example.flutter_unity
+import com.xraph.plugin.flutter_unity_widget.FlutterUnityActivity;
 
-import io.flutter.embedding.android.FlutterActivity
-
-class MainActivity: FlutterActivity() {
+class MainActivity: FlutterUnityActivity() {
 }
