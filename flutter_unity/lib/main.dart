@@ -27,7 +27,11 @@ class _UnityDemoScreenState extends State<UnityDemoScreen> {
       key: _scaffoldKey,
       body: SafeArea(
         bottom: false,
-        child: PopScope(
+        child: WillPopScope(
+          onWillPop: () async {
+            // Pop the category page if Android back button is pressed.
+            return true;
+          },
           child: Container(
             color: Colors.yellow,
             child: UnityWidget(

@@ -39,7 +39,7 @@ namespace FlutterUnityIntegration.Editor
             Path.Combine(ProjectPath, "../../ios_xcode/UnityLibrary")
         );
 
-        private static bool _pluginMode = false;
+        private bool _pluginMode = false;
         private static string _persistentKey = "flutter-unity-widget-pluginMode";
 
         //#region GUI Member Methods
